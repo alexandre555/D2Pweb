@@ -1,10 +1,16 @@
+import Link from 'next/Link';
+
 import { useState } from 'react';
 
 function Home(){
     return (
         <div>
             <h1>D2P - Página Inicial</h1>
-            <Contador />
+            <Link href="/sobre">
+                <a>Quem sou eu?</a>
+            </Link>
+            <hr />
+            <h1><Contador /></h1>
         </div>
         
     )
